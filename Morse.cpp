@@ -1,0 +1,234 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+int main()
+{
+	cout<<"Enter Input";
+	string encoded;
+	string decoded;
+	getline(cin, encoded);
+	int c=0;
+	if(encoded[0]=='_'||encoded[0]=='.')
+	goto english;
+	else
+	goto morse;
+	morse:
+	english:
+		meng:
+			int d=0;
+			while(encoded[c]=='.'|| encoded[c]=='_')
+			{
+				decoded[d]=encoded[c];
+				c++;
+				d++;
+			}
+			if(d==1)
+			{
+				if(decoded[0]=='.')
+				cout<<"E";
+				else
+				cout<<"T";
+				//break;
+			}
+			
+			
+			
+			if(d==2)
+			{
+				if(decoded[0]=='.')
+				{
+					if(decoded[1]=='.')
+					cout<<"I";
+					else
+					cout<<"A";
+					//break;
+				}
+				if(decoded[0]=='_')
+				{
+					if(decoded[1]=='.')
+					cout<<"N";
+					else
+					cout<<"M";
+					//break;
+				}
+			}
+			
+			
+			if(d==3)
+			{
+				if(decoded[0]=='.')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						cout<<"S";
+						else
+						cout<<"U";
+						//break;
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						cout<<"R";
+						else
+						cout<<"W";
+						//break;
+					}
+				}
+				if(decoded[0]=='_')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						cout<<"D";
+						else
+						cout<<"K";
+						//break;
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						cout<<"G";
+						else
+						cout<<"O";
+						//break;
+					}
+				}
+			}
+				
+			if(d==4)
+			{
+				if(decoded[0]=='.')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							cout<<"H";
+							else
+							cout<<"V";
+							//break;
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							cout<<"F";
+							else
+							cout<<":U";
+							//break;
+						}
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							cout<<"L";
+							else
+							cout<<":A"
+							//break;
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							cout<<"P";
+							else
+							cout<<"J";
+							//break;
+						}
+					}
+				}
+			}
+				if(decoded[0]=='_')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							cout<<"B";
+							else
+							cout<<"X";
+							//break;
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							cout<<"C";
+							else
+							cout<<"Y";
+							//break;
+						}
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							cout<<"Z";
+							else
+							cout<<"Q";
+							//break;
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							cout<<":O";
+							else
+							cout<<"CH";
+						}
+					}
+				}
+			if(d==5)
+			{
+				if(decoded[0]=='.')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<5;
+								else
+								cout<<4;
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"^S";
+								else
+								cout<<'3';
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<"`E";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"-D";
+								else
+								cout<<'2';
+							}
+						}
+					}
+					else
+					{
+						
+					}
+				}
+			}
+	if(encoded[c]==' ')
+	{
+		c++;
+		goto meng;
+	}
+	return 0;
+}
