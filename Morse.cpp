@@ -126,7 +126,7 @@ int main()
 							if(decoded[3]=='.')
 							cout<<"L";
 							else
-							cout<<":A"
+							cout<<":A";
 							//break;
 						}
 						else
@@ -139,7 +139,6 @@ int main()
 						}
 					}
 				}
-			}
 				if(decoded[0]=='_')
 				{
 					if(decoded[1]=='.')
@@ -180,6 +179,7 @@ int main()
 						}
 					}
 				}
+			}
 			if(d==5)
 			{
 				if(decoded[0]=='.')
@@ -191,9 +191,9 @@ int main()
 							if(decoded[3]=='.')
 							{
 								if(decoded[4]=='.')
-								cout<<5;
+								cout<<'5';
 								else
-								cout<<4;
+								cout<<'4';
 							}
 							else
 							{
@@ -221,7 +221,299 @@ int main()
 					}
 					else
 					{
-						
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<"&";
+								else
+								cout<<"`E";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"+";
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<"|p";
+								else
+								cout<<"`A";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"^j";
+								else
+								cout<<'1';
+							}
+						}
+					}
+				}
+				if(decoded[0]=='_')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<'6';
+								else
+								cout<<"=";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"/";
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<",C";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"(";
+							}
+						}
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<'7';
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"^G";
+								else
+								cout<<"~N";
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								cout<<"8";
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								cout<<"9";
+								else
+								cout<<'0';
+							}
+						}
+					}
+				}
+			}
+			if(d==6)
+			{
+				if(decoded[0]=='.')
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									{
+									}	
+								}
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									{
+										cout<<"END OF WORK !";
+									}	
+								}
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									{
+									}
+								}
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									cout<<"?";
+									else
+									cout<<"_";
+								}
+							}
+						}
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									{
+									}
+								}
+								else
+								{
+									if(decoded[5]=='.')
+									cout<<"''";
+								}
+							}
+							else
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									cout<<".";
+								}
+							}
+							
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									{
+									}
+								}
+								else
+								{
+									if(decoded[5]=='.')
+									cout<<"@";
+								}
+							}
+							else
+							{
+								if(decoded[4]=='_')
+								{
+									if(decoded[5]=='.')
+									cout<<"'";
+								}
+							}
+						}
+					}
+				}
+				else 
+				{
+					if(decoded[1]=='.')
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									{
+										cout<<"-";
+									}	
+								}
+								
+							}
+							
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									{
+										cout<<"-";
+									}	
+								}
+								else
+								{
+									if(decoded[5]=='.')
+									{
+										cout<<";";
+									}
+									else
+									{
+										cout<<"!";
+									}
+								}
+								
+							}
+							else //_._ _
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									{
+										cout<<")";
+									}	
+								}
+							}
+						}
+					}
+					else
+					{
+						if(decoded[2]=='.')
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='_')
+									{
+									}	
+								}
+								else
+								{
+									if(decoded[5]=='_')
+									cout<<",";
+								}	
+							}
+						}
+						else
+						{
+							if(decoded[3]=='.')
+							{
+								if(decoded[4]=='.')
+								{
+									if(decoded[5]=='.')
+									cout<<":";	
+								}
+							}
+						}
 					}
 				}
 			}
@@ -230,5 +522,6 @@ int main()
 		c++;
 		goto meng;
 	}
+	morse:
 	return 0;
 }
