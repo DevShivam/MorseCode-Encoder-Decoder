@@ -3,16 +3,17 @@
 using namespace std;
 int main()
 {
+	char a=' ';
 	cout<<"Enter Input";
 	string encoded;
 	string decoded;
 	getline(cin, encoded);
 	int c=0;
 	if(encoded[0]=='_'||encoded[0]=='.')
-	goto english;
-	else
-	goto morse;
-	morse:
+	{
+	//goto english;
+	//else
+	//goto morse;
 	english:
 		meng:
 			int d=0;
@@ -522,6 +523,122 @@ int main()
 		c++;
 		goto meng;
 	}
-	morse:
+	}
+	else{
+	//morse:
+		int count=0, alp=0;
+		count=encoded.length();
+		while(count--)
+		{
+			if((encoded[alp]>='a'&&encoded[alp]<='z')||(encoded[alp]>='A'&&encoded[alp]<='X')||(encoded[alp]>='0'&&encoded[alp]<='9')||encoded[alp]=='?'||encoded[alp]=='_'||encoded[alp]=='"'||encoded[alp]=='.'||encoded[alp]=='@'||encoded[alp]=='`'||encoded[alp]=='-'||encoded[alp]=='='||encoded[alp]=='/'||encoded[alp]==':')
+			{
+				if(encoded[alp]==' '))
+				cout<<">??><"<<"   ";
+				if(encoded[alp]=='A'||encoded[alp]=='a')
+				cout<<"._";
+				if(encoded[alp]=='B'||encoded[alp]=='b')
+				cout<<"_...";
+				if(encoded[alp]=='C'||encoded[alp]=='c')
+				cout<<"_._.";
+				if(encoded[alp]=='D'||encoded[alp]=='d')
+				cout<<"_..";
+				if(encoded[alp]=='E'||encoded[alp]=='e')
+				cout<<".";
+				if(encoded[alp]=='F'||encoded[alp]=='f')
+				cout<<".._.";
+				if(encoded[alp]=='G'||encoded[alp]=='g')
+				cout<<"__.";
+				if(encoded[alp]=='H'||encoded[alp]=='h')
+				cout<<"....";
+				if(encoded[alp]=='I'||encoded[alp]=='i')
+				cout<<"..";
+				if(encoded[alp]=='J'||encoded[alp]=='j')
+				cout<<".___";
+				if(encoded[alp]=='K'||encoded[alp]=='k')
+				cout<<"_._";
+				if(encoded[alp]=='L'||encoded[alp]=='l')
+				cout<<"._..";
+				if(encoded[alp]=='M'||encoded[alp]=='m')
+				cout<<"__";
+				if(encoded[alp]=='N'||encoded[alp]=='n')
+				cout<<"_.";
+				if(encoded[alp]=='O'||encoded[alp]=='o')
+				cout<<"___";
+				if(encoded[alp]=='P'||encoded[alp]=='p')
+				cout<<".__.";
+				if(encoded[alp]=='Q'||encoded[alp]=='q')
+				cout<<"__._";
+				if(encoded[alp]=='R'||encoded[alp]=='r')
+				cout<<"._.";
+				if(encoded[alp]=='S'||encoded[alp]=='s')
+				cout<<"...";
+				if(encoded[alp]=='T'||encoded[alp]=='t')
+				cout<<"_";
+				if(encoded[alp]=='U'||encoded[alp]=='u')
+				cout<<".._";
+				if(encoded[alp]=='V'||encoded[alp]=='v')
+				cout<<"..._";
+				if(encoded[alp]=='W'||encoded[alp]=='w')
+				cout<<".__";
+				if(encoded[alp]=='X'||encoded[alp]=='x')
+				cout<<"_.._";
+				if(encoded[alp]=='Y'||encoded[alp]=='y')
+				cout<<"_.__";
+				if(encoded[alp]=='Z'||encoded[alp]=='z')
+				cout<<"__..";
+				if(encoded[alp]=='1')
+				cout<<".____";
+				if(encoded[alp]=='2')
+				cout<<"..___";
+				if(encoded[alp]=='3')
+				cout<<"...__";
+				if(encoded[alp]=='4')
+				cout<<"...._";
+				if(encoded[alp]=='5')
+				cout<<".....";
+				if(encoded[alp]=='6')
+				cout<<"_....";
+				if(encoded[alp]=='7')
+				cout<<"__...";
+				if(encoded[alp]=='8')
+				cout<<"___..";
+				if(encoded[alp]=='9')
+				cout<<"____.";
+				if(encoded[alp]=='0')
+				cout<<"_____";
+				if(encoded[alp]==':')
+				cout<<"___...";
+				if(encoded[alp]==',')
+				cout<<"__..__";
+				if(encoded[alp]==')')
+				cout<<"_.__._";
+				if(encoded[alp]=='(')
+				cout<<"_.__.";
+				if(encoded[alp]=='!')
+				cout<<"_._.__";
+				if(encoded[alp]==';')
+				cout<<"_._._.";
+				if(encoded[alp]=='/')
+				cout<<"_.._.";
+				if(encoded[alp]=='/')
+				cout<<"_.._.";
+				if(encoded[alp]=='-')
+				cout<<"_...._";
+				if(encoded[alp]=='`')
+				cout<<".____.";
+				if(encoded[alp]=='@')
+				cout<<".__._.";
+				if(encoded[alp]=='.')
+				cout<<"._._._";
+				if(encoded[alp]=='"')
+				cout<<"._.._.";
+				if(encoded[alp]=='?')
+				cout<<"..__..";
+				if(encoded[alp]=='_')
+				cout<<"..__._";
+			}
+		}
+		}
+		
 	return 0;
 }
